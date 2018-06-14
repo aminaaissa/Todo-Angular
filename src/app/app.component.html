@@ -1,14 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-
-</div>
-<div class="main">
- <div class="addItem">
-<input type="" placeholder="add item" class="addText">
-<button>ajouter</button>
-
- </div>
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  
   </div>
+  <form>
+  
+  <div class="input-group mb-3">
+      <div class="input-group-prepend">
+          <input type="text" class="form-control"  type="text" #newTodo/>
+          <button class="btn btn-outline-secondary" type="button" (click)="addTodo(newTodo.value);">Add</button>
+  </div></div></form>
+  <table>
+    <tr>
+  <td>label</td>
+  <td>priority</td>
+  <td>done</td>
+    </tr>
+    
+    <tr *ngFor="let todo of todos" >
+  <td> {{todo.label}}</td>
+  <td> {{todo.priority}}</td>
+  <td> {{todo.done}}</td>
+  
+  </table>
+  
+  
+   
