@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AtlasComComponent implements OnInit {
 
-  constructor() { }
+
+  name="amina";
+  lname="aissa";
+  age="28ans";
+   employe={ name:'amina',lname:'aissa',age:'28ans'}
+   
+   constructor() { }
 
   ngOnInit() {
   }
