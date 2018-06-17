@@ -1,10 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<style>
+
+
+
+
+
+
+</style>
+<script>jQuery(document).ready(function() {
+    jQuery('.toggle-nav').click(function(e) {
+        jQuery(this).toggleClass('active');
+        jQuery('.menu ul').toggleClass('active');
+ 
+        e.preventDefault();
+    });
+});</script>
+<nav class="menu">
+  <ul class="active">
+      <li class="current-item"><a href="#">Home</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Doc</a></li>
+      
+  </ul>
+
+  <a class="toggle-nav" href="#">&#9776;</a>
+
+</nav>
+
+
 <div style="text-align:center">
-    <h1>
+    <h2>
       Welcome to {{ title }}!
-    </h1>
+    </h2>
   
   </div>
+  
   <form>
   
   <div class="input-group mb-3">
@@ -12,17 +42,19 @@
           <input type="text" class="form-control"  type="text" #newTodo/>
           <button class="btn btn-outline-secondary" type="button" (click)="addTodo(newTodo.value);">Add</button>
   </div></div></form>
-  <table>
+  <table class="table table-striped">
     <tr>
-  <td>label</td>
-  <td>priority</td>
-  <td>done</td>
+  <td>Name</td>
+  
     </tr>
     
     <tr *ngFor="let todo of todos" >
   <td> {{todo.label}}</td>
-  <td> {{todo.priority}}</td>
-  <td> {{todo.done}}</td>
+ 
+  <td>
+
+    <button (click)="deleteTodo(todo)">delete</button>
+  </td>
   
   </table>
   

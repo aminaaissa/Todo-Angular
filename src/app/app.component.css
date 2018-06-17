@@ -1,8 +1,51 @@
 h1 {
 
-color: #369;
+color: #FFFF;
 font-family: Arial, Helvetica, sans-serif;
 font-size: 250%;
 
 
 }
+.toggle-nav {
+    display:none;
+}
+  
+/*----- Menu -----*/
+@media screen and (min-width: 860px) {
+    .menu {
+        width:100%;
+        padding:10px 18px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#303030;
+    }
+}
+  
+.menu ul {
+    display:inline-block;
+}
+  
+.menu li {
+    margin:0px 50px 0px 0px;
+    float:left;
+    list-style:none;
+    font-size:17px;
+}
+  
+.menu li:last-child {
+    margin-right:0px;
+}
+
+td{
+
+    background: lightyellow;
+    padding: 5px;
+    width: 100%
+}
+ th {
+
+
+    background: brown;
+    color: white;
+    padding :5px;
+ }

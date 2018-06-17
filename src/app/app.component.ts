@@ -25,7 +25,8 @@ export class AppComponent {
 
 
          ];
-          addTodo(newTodolable){
+ addTodo(newTodolable){
+
 var newTodo ={
 label: newTodolable,
 priority:1,
@@ -34,6 +35,12 @@ done:false
 };
 this.todos.push(newTodo);
 
+
+          }
+
+          deleteTodo(Todo){
+
+this.todos =this.todos.filter( t=>t.label !== Todo.label);
 
           }
 
