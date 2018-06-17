@@ -8,14 +8,33 @@ import { Component, OnInit } from '@angular/core';
 export class AtlasComComponent implements OnInit {
 
 
-  name="amina";
-  lname="aissa";
-  age="28ans";
-   employe={ name:'amina',lname:'aissa',age:'28ans'}
+  
    
-   constructor() { }
+   constructor() {
+
+   
+    }
 
   ngOnInit() {
   }
-
+ 
 }
+//
+//name :string="amina";
+//lname="aissa";
+//age="28ans";
+ //employe={ name:'amina',lname:'aissa',age:'28ans'}
+ 
+ //constructor() {
+
+  //this.employe.name='salah';
+  //this.ChangeName()   
+  //this.employe.lname='tarasalah';
+ // }
+
+//ngOnInit() {
+//}
+//ChangeName() {
+ // this.employe.name='47'}
+
+//}
